@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Ike | Designer de Comunicação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-orange: #f83e02;
+            --brand-cream: #fde7cf;
+            --brand-yellow: #feb431;
+            --brand-dark: #1A1A1A;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--brand-cream);
+            color: var(--brand-dark);
+        }
+        .font-display {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .font-serif-display {
+            font-family: 'DM Serif Display', serif;
+        }
+        .text-brand {
+            color: var(--brand-orange);
+        }
+        .bg-brand {
+            background-color: var(--brand-orange);
+        }
+        .bg-cream {
+            background-color: var(--brand-cream);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .doodle-star {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            fill: var(--brand-orange);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
